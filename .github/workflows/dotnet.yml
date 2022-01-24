@@ -1,8 +1,14 @@
 name: publish
 
 on:
-  release:
-    types: [push]
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+#on:
+#  release:
+#    types: [published]
 
 jobs:
   release:
