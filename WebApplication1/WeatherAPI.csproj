@@ -4,6 +4,11 @@
     <TargetFramework>net5.0</TargetFramework>
 	<IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<PackageId>RHMWeatherAPI</PackageId>
+	<Version>1.0.0</Version>
+	<Authors>rhm</Authors>
+	<Company>rhm</Company>
+	<PackageDescription>This package adds a rhm!</PackageDescription>
   </PropertyGroup>
 
   <ItemGroup>
