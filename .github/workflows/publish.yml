@@ -47,8 +47,8 @@ jobs:
           source-url: https://nuget.pkg.github.com/runeheidem/index.json
         env:
           NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - run: dotnet build --configuration Release WeatherAPI/WebApplication1
+      - run: dotnet build --configuration Release WebApplication1
       - name: Create the package
-        run: dotnet pack --configuration Release WeatherAPI/WebApplication1
+        run: dotnet pack --configuration Release WebApplication1
       - name: Publish the package to GPR
-        run: dotnet nuget push WeatherAPI/bin/Release/*.nupkg
+        run: dotnet nuget push WebApplication1/bin/Release/*.nupkg
