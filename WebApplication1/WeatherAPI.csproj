@@ -8,6 +8,7 @@
 	<Authors>rhm</Authors>
 	<Company>rhm</Company>
 	<PackageDescription>This package adds a rhm!</PackageDescription>
+	<RepositoryUrl>https://github.com/runeheidem/WeatherAPI</RepositoryUrl>
 	<IsPackable>true</IsPackable>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
