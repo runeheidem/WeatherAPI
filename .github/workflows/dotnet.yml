@@ -1,10 +1,7 @@
-name: publish
-
+name: Publish
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  release:
+    types: [published]
 
 #on:
 #  release:
@@ -26,7 +23,7 @@ jobs:
           - kind: macOS
             os: macos-latest
             target: osx-x64
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     steps:
       - name: Checkout
